@@ -3,6 +3,8 @@
  */
 package sef.module3.activity;
 
+import java.sql.SQLOutput;
+
 /**
  * @author 
  *
@@ -14,14 +16,14 @@ public class NumToWords {
 	 */
 	public static void main(String[] args) {
 		
-		for ( int i = 1; i < 11; i++ ) {
+		for ( int i = 1; i <= 50; i++ ) {
 			System.out.println ( "The value of i is:- " + i );
 		}
 
 		
 		
 				
-		int i = 2;
+		int i = 5;
 		String numText ;
 		switch(i) {
 		case 1:
@@ -39,7 +41,7 @@ public class NumToWords {
 		case 5:
 			numText = "FIVE";
 			break;
-			// complete the code.
+
 		default:
 			numText = "NUMBER " + i;
 		}

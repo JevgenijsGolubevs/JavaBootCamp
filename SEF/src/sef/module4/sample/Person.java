@@ -6,18 +6,20 @@ public class Person {
 
 	//Attributes
 	private String name;
+	private String car;
+
 	 final int counter = 100 ;
 	
 	
 	//Behavior
 	public Person(String name){
 		
-		System.out.println("Welcomt to new class");
+		System.out.println("Welcome to new class");
 		this.name = name;
 	}
 	public Person(){
 		
-		System.out.println("Welcomt to new class and I don't have any basic value of Name");
+		System.out.println("Welcome to new class and I don't have any basic value of Name");
 	}
 	
 	public String getName() {
@@ -27,7 +29,7 @@ public class Person {
 		this.name = name;
 	}
 
-	public String introduce(){
+	public String introducePersonCapacity(){
 		return "My name is " + name;
 	}
 	
