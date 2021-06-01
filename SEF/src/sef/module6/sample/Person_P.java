@@ -32,7 +32,7 @@ public class Person_P {
 	}
 
 	// getter for int age
-	public int getAge() {
+	public int getAge(int i) {
 		return age;
 	}
 

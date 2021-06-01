@@ -11,13 +11,20 @@ public class VirtualMethodSample {
 	
 		s.setSchool("A Fictional School");
 		s.setGrade(10);
-		
+
+		Employee_P employee_p = new Employee_P();
+		employee_p.setName("Don Gan");
+		employee_p.setAge(25);
+
+
 		rollCall(s);
 		rollCall(p);
+		rollCall(employee_p);
 	
 	}
-	
+
 	public static void rollCall(Person_P temp){
 			temp.announce();
 	}
+
 }
