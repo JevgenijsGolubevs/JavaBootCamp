@@ -9,6 +9,7 @@ public class StrategySample {
 		Strategy s1 = new StrategyImplOne();
 		Strategy s2 = new StrategyImplTwo();
 		Strategy s3 = new StrategyImplThree();
+		Strategy rush = new StrategyRush();
 		
 		General g = new General("John Doe");
 		
@@ -22,6 +23,13 @@ public class StrategySample {
 		
 		g.setStragey(s3);
 		g.executeStrategy();
+
+		g.setStragey(rush);
+		g.executeStrategy();
+
+		Monkey monkey = new Monkey("Johnny");
+		monkey.setStragey(s3);
+		monkey.executeStrategy();
 		
 	}
 }

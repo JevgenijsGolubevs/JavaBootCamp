@@ -16,6 +16,13 @@ public class PersonSampleTwo {
 		}
 		this.name = name;
 	}
+	public final void openWebPage(String link){
+		if(link==null && link.contains("https://")){
+			throw new IllegalArgumentException("Link cannot be null!");
+
+		}
+		openWebPage("https://www.google.lv");
+	}
 	
 	public  String getName(String name){
 		return name;
@@ -26,7 +33,7 @@ public class PersonSampleTwo {
 	}
 	
 	public final void setAge(int age){
-		if(age < 0){
+		if(age <= 15){
 			throw new IllegalArgumentException("Age cannot be negative!");
 		}
 		this.age = age;
