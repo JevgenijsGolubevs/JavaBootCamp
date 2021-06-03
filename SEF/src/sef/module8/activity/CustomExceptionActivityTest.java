@@ -4,13 +4,15 @@ package sef.module8.activity;
 //The user name is checked against an array of names.
 
 public class CustomExceptionActivityTest {
-
+    public static void main (String args[]){
+    validateUser();
+    }
     //1 - Type main method and call validateUser() from it.
     //Call this method with different names to test it
 
 
-    void validateUser(String name){}
-            String name = "John";
+    static void validateUser(){}
+            String name = "Joshua";
     {
         //array of names
         String []validUsers={"John","Mike","Shanti","Stacie"};
