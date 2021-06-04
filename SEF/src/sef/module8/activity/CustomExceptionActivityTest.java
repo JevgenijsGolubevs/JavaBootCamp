@@ -21,18 +21,19 @@ public class CustomExceptionActivityTest {
         //array of names
         String[] validUsers = {"John", "Mike", "Shanti", "Stacie"};
 //flag stores 1 if a match is found else it should remain 0
-        int flag = 0;
-        for (int i = 0; i < 4; i++)
-            {
-//2 - Write code to check if parameter name contains a value which is found in validUsers array and change flag's value accordingly
-                if (name == validUsers[i]) {
-                    flag = 1;
 
-                }
+        int flag = 0;
+        for (int i = 0; i < 4; i++) {
+//2 - Write code to check if parameter name contains a value which is found in validUsers array and change flag's value accordingly
+            if (name == validUsers[i]) {
+                flag = 1;
+
             }
+        }
 //3 - check if flag is zero, throw CustomExceptionActivity Exception.
 //You may also have to declare this exception in the method call using throws.
-            if (flag == 0) {
+
+        if (flag == 0) {
                 throw new CustomExceptionActivity();
             }
 

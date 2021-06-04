@@ -27,32 +27,34 @@ public class EmployeeJDBC {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return con;
 	}
-	
+
 	public Employee findEmployeeById(String id)
 	{
 		Connection con = createConnection();
 		Employee emp=null;
 		try {
 		// 1 - Create a PreparedStatement with a query
-		
+		PreparedStatement preparedStatement = createConnection().prepareStatement()
 
 		// 2 - Search for the given id
-		
+
 
 		// 3 - Execute this query
-		
-		
-		// 4 - If resultset is not null, then initialize emp object with data 
-		
+			ResultSet result = preparedStatement.executeQuery();
+
+		// 4 - If resultset is not null, then initialize emp object with data
+
+
+
 		con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return emp;
 	}
 
@@ -60,24 +62,24 @@ public class EmployeeJDBC {
 	{
 		Connection con = createConnection();
 		ArrayList<Employee> list = new ArrayList<Employee>();
-		
+
 		try {
 		// 1 - Create a PreparedStatement with a query
-		
+
 
 		// 2 - Search for the given id
-		
+
 		// 3 - Execute this query
-		
-		
-		// 4 - While there are some records, continue 
-		
+
+
+		// 4 - While there are some records, continue
+
 			con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return list;
 	}
 
@@ -85,40 +87,40 @@ public class EmployeeJDBC {
 	{
 		Connection con = createConnection();
 		ArrayList<Employee> list = new ArrayList<Employee>();
-		
+
 		try {
 		// 1 - Create a PreparedStatement with a query
-		
+
 
 		// 2 - Search for the given salary
-		
+
 
 		// 3 - Execute this query
 
-		
-		// 4 - While there are records, continue 
+
+		// 4 - While there are records, continue
 
 		con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return list;
 	}
 
 	public void insertEmployee(Employee emp)
 	{
 		Connection con = createConnection();
-		
-		//1 - Create a PreparedStatement with a query "insert into employee values(?,?,?,?)" 
-		
+
+		//1 - Create a PreparedStatement with a query "insert into employee values(?,?,?,?)"
+
 		con.setAutoCommit(false);
 
 		//	Substitute the ? now.
-		
+
 		//2 - Execute this query using executeUpdate()
-			
+
 		System.out.println(rows + " row(s) added!");
 		con.commit();
 		con.close();
@@ -126,7 +128,7 @@ public class EmployeeJDBC {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 
 	}
 
